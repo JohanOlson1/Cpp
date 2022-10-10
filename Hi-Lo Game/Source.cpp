@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 
-// Create random number between 1 and 100, uniform
+// Create random number between 1 and 100, uniform distribution
 int generateRandomNumber()
 {
     int min{ 1 }, max{ 100 };
@@ -11,81 +11,82 @@ int generateRandomNumber()
     return randomNum(mt);
 }
 
-// Check status of the guess, print appropiate output to stdout
+// Check status of the guess and print appropiate output to stdout
 bool checkGuess(int guess, int randomNumber)
 {
     if (guess > randomNumber)
     {
-        std::cout << "Your guess is too high.\n";
+        std::cout << "Your guess is too high. \n";
+        return false;
     }
     else if (guess < randomNumber)
     {
-        std::cout << "Your guess is too low.\n";
+        std::cout << "Your guess is too low. \n";
+        return false;
     }
     else if (guess == randomNumber)
     {
-        std::cout << "Correct! You win!\n";
+        std::cout << "Correct! You win! \n";
         return true;
     }
     else
     {
-        std::cout << "Invalid input!\n";
+        std::cout << "Invalid input! \n";
     }
 }
 
+// Uses a call back to the function if invalid input, instead of a goto back to its start
 bool playAgain()
 {
-    bool incorrectInput{ true };
-    char input;
+    char answer;
+    std::cout << "Would you like to play again (y/n)? ";
+    std::cin >> answer;
 
-    while (incorrectInput)
+    if (answer == 'y')
+        return true;
+    else if (answer == 'n')
     {
-        std::cout << "Would you like to play again [y/n]: ";
-        std::cin >> input;
-
-        if (input != 'y' || input != 'n')
-        {
-            incorrectInput = true;
-            std::cout << "Incorrect Input, try again\n";
-        }
-        else
-        {
-            incorrectInput = false;
-        }
+        std::cout << "Thank you for playing. \n";
+        return false;
+    }
+    else
+    {
+        std::cout << "Invalid answer, try again \n";
+        playAgain();
     }
 
-    if (input == 'y')
-        return true;
-    else
-        return false;
 }
 
 int main()
 {
-    bool playing{ true };
-        while (playing)
+    bool newGame{ true };
+
+    while (newGame)
+    {
+        int randomNumber{ generateRandomNumber() };
+        bool correctGuess{ false };
+        int guess;
+
+        std::cout << "Let's play a game. I'm thinking of a number between 1 and 100. You have 7 tries to guess what it is. \n";
+
+        for (int guessNumber = 1; guessNumber <= 7; ++guessNumber)
         {
-            int randomNumber{ generateRandomNumber() };
+            std::cout << "Guess #" << guessNumber << ": ";
+            std::cin >> guess;
 
-            std::cout << "This is a game of Hi-Lo with seven guesses\n";
-            std::cout << "Guess a number between 1 and 100\n";
+            correctGuess = checkGuess(guess, randomNumber);
 
-            int guess;
-            bool correctGuess{ false };
-
-            for (int numberOfGuesses{ 1 }; numberOfGuesses < 8; ++numberOfGuesses)
-            {
-                std::cout << "Guess: ";
-                std::cin >> guess;
-
-                correctGuess = checkGuess(guess, randomNumber);
-
-                if (correctGuess)
-                {
-                    playing = playAgain();
-                }
-            }
+            if (correctGuess) break;
         }
-    
+
+        if (correctGuess == false)
+        {
+            std::cout << "Sorry, you lose. The correct number was: " << randomNumber << "\n";
+        }
+
+        newGame = playAgain();
+
+    }
+
     return 0;
 }
