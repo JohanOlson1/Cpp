@@ -44,4 +44,3 @@ Programs can be compiled or interpreted for different systems, so the program do
 
 Usual measurement of computation performance. More computationally expensive than other operations. In scientific fields floating point numbers are common and hence this way of measuring speed good. 
 
-# Computer Architecture
