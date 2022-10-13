@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\Johan\Documents\GitHub\LearningCpp\Hi-Lo Game\Source.cpp(75): warning C4715: 'checkGuess': not all control paths return a value
-  Hi-Lo Game.vcxproj -> C:\Users\Johan\Documents\GitHub\LearningCpp\Hi-Lo Game\x64\Debug\Hi-Lo Game.exe

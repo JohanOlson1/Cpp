@@ -1,0 +1,2 @@
+C:\Users\Johan\Documents\GitHub\Cpp\Hi-Lo Game\x64\Debug\Hi-Lo Game.exe
+C:\Users\Johan\Documents\GitHub\LearningCpp\Hi-Lo Game\x64\Debug\Hi-Lo Game.exe
