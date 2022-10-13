@@ -5,7 +5,7 @@ https://www.learncpp.com/
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-The C++ source files included are:
+The C++ projects included are:
 
 1. Learning File 			- For on the fly testing
 2. HelloWorld 				- A first check to see the program works

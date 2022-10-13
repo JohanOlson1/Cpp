@@ -1,1 +1,2 @@
 C:\Users\Johan\Documents\GitHub\LearningCpp\Bubble Sort 11.3\x64\Debug\Bubble Sort 11.3.exe
+C:\Users\Johan\Documents\GitHub\Learning-Cpp\Bubble Sort 11.3\x64\Debug\Bubble Sort 11.3.exe
