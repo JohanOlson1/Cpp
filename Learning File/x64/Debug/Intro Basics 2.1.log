@@ -1,6 +1,3 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Intro Basics 2.1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   main.cpp
-C:\Users\Johan\Documents\GitHub\LearningCpp\Learning File\main.cpp(13,8): warning C4189: 'shirt': local variable is initialized but not referenced
-C:\Users\Johan\Documents\GitHub\LearningCpp\Learning File\main.cpp(12,8): warning C4189: 'apple': local variable is initialized but not referenced
-C:\Users\Johan\Documents\GitHub\LearningCpp\Learning File\main.cpp(14,8): warning C4189: 'cup': local variable is initialized but not referenced
   Intro Basics 2.1.vcxproj -> C:\Users\Johan\Documents\GitHub\LearningCpp\Learning File\x64\Debug\Learning File.exe
