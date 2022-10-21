@@ -114,4 +114,4 @@ void shuffleDeck(Deck& deck) // Deck is the array type
 
 **Best practice**: Unless otherwise specified, do not assume that standard library algorithms will execute in a particular sequence. `std::for_each`, `std::copy`, `std::copy_backward`, `std::move`, and `std::move_backward` have sequential guarantees.
 
-**Best practice**: Favor using functions from the algorithms library over writing your own functionality to do the same thing
+**Best practice**: Favor using functions from the algorithms library over writing your own functionality to do the same thing.

@@ -25,7 +25,7 @@ int main()
 		// Compare each pair, compare with next, stop before last one due to stopIndex
 		for (int index = 0; index < stopIndex; ++index)
 		{
-			if (array[index] > array[index + 1])
+			if (array[index] > array[index + 1]) // Swap the largest element to the right
 			{
 				std::swap(array[index], array[index + 1]);
 				swapped = true;

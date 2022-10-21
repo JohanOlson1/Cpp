@@ -8,8 +8,7 @@ https://www.learncpp.com/
 The C++ projects included are:
 
 1. Learning File 			- For on the fly testing
-2. HelloWorld 				- A first check to see the program works
-3. Exercises x.y			- With descriptive name and number corresponding to Chapter (and optionally which quiz in the summary of the chapter)
+2. Exercises x.y			- With descriptive name and number corresponding to Chapter (and optionally which quiz in the summary of the chapter)
 
 -----------------------------------------------------------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
-#include <iostream>
-#include <array>
-#include <numeric> // std::reduce
-#include <typeinfo>
+#include <iostream>	
+#include <array>	// std::array
+#include <numeric>  // std::reduce
+#include <typeinfo> // Get type
 
 
 enum ItemTypes

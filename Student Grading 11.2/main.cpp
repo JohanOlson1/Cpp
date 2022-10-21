@@ -10,7 +10,7 @@ struct Student
 	int grade{};
 };
 
-// Simplify typing of this type
+// Simplify typing of vector containing students
 using Students = std::vector<Student>;
 
 int numberOfStudents()

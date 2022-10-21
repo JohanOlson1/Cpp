@@ -75,6 +75,7 @@ void printCard(const Card& card)
 		case cardRank::Queen:	std::cout << 'Q';  break;
 		case cardRank::King:	std::cout << 'K';  break;
 		case cardRank::Ace:		std::cout << 'A';  break;
+
 		default:				std::cout << '?';  break;
 	}
 
@@ -150,7 +151,7 @@ constexpr int g_maximumScore{ 21 };
 constexpr int g_dealerLimit{ 17 };
 
 // Use references to manipulate score and cardCount, updating them after card is drawn
-void drawCardBlackJack(const Deck& deck, int& score, int& cardCount)
+void drawCardBlackJack(const Deck& deck, int& score, Index& cardCount)
 {
 	// Draw a card and print it
 	std::cout << "Draws: ";
@@ -164,7 +165,7 @@ void drawCardBlackJack(const Deck& deck, int& score, int& cardCount)
 }
 
 // Use references to manipulate the scores and cardCount, updating them after card is drawn
-void dealBlackJack(const Deck& deck, int& playerScore, int& dealerScore, int& cardCount)
+void dealBlackJack(const Deck& deck, int& playerScore, int& dealerScore, Index& cardCount)
 {
 	// Dealer draws a card first
 	std::cout << "Dealers turn: " << '\n';
@@ -176,7 +177,7 @@ void dealBlackJack(const Deck& deck, int& playerScore, int& dealerScore, int& ca
 }
 
 // Ask player for a decision whether to hit or stand
-bool playerDecision(const Deck& deck, int& score, int& cardCount)
+bool playerDecision(const Deck& deck, int& score, Index& cardCount)
 {
 	char answer{};
 	std::cout << "Do you wish to hit? (y/n): ";
@@ -190,7 +191,7 @@ bool playerDecision(const Deck& deck, int& score, int& cardCount)
 }
 
 // Ask dealer for a decision whether to hit or stand
-bool dealerDecision(const Deck& deck, int& score, int& cardCount)
+bool dealerDecision(const Deck& deck, int& score, Index& cardCount)
 {
 	// Dealer only hits if score is below g_dealerLimit (stop limit), otherwise stands
 	if (score < g_dealerLimit)
@@ -213,7 +214,7 @@ BlackjackResult playBlackJack(const Deck& deck)
 {
 	int playerScore{ 0 };		// Track Player score
 	int dealerScore{ 0 };		// Track Dealer score
-	int cardCount{ 0 };			// Track card in deck
+	Index cardCount{ 0 };			// Track card in deck
 	bool playerHits{ true };	// No choice in startup, can choose to stand afterwards
 	bool dealerHits{ true };	// No choice in startup, can choose to stand afterwards
 

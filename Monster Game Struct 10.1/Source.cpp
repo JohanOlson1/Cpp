@@ -1,8 +1,8 @@
 #include <iostream>
-#include <string>
-#include <string_view> // C++17
+#include <string>		// std::string
+#include <string_view>  // C++17
 
-// Scoped Enumerator with possible monsters types
+// Possible monster types
 enum class MonsterType
 {
 	ogre,
@@ -15,11 +15,9 @@ enum class MonsterType
 // Struct holding the stats of a Monster
 struct Monster
 {
-
 	MonsterType type {};
 	std::string name {};
 	int health {};
-
 };
 
 // Function using (more) efficient switch statement to return string (observe use of type string_view, which need C++17)
@@ -43,7 +41,6 @@ void printMonster(const Monster& monster)
 	std::cout << "This " << getMonsterTypeString(monster.type) << 
 		" is named " << monster.name << " and has " << monster.health << " health.\n";
 };
-
 
 int main()
 {
