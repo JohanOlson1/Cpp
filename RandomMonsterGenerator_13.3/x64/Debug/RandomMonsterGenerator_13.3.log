@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Johan\Documents\GitHub\Learning-Cpp\RandomMonsterGenerator_13.3\main.cpp(91,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Johan\Documents\GitHub\Learning-Cpp\RandomMonsterGenerator_13.3\main.cpp(93,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Johan\Documents\GitHub\Learning-Cpp\RandomMonsterGenerator_13.3\main.cpp(51): warning C4715: 'Monster::getTypeString': not all control paths return a value
+  RandomMonsterGenerator_13.3.vcxproj -> C:\Users\Johan\Documents\GitHub\Learning-Cpp\RandomMonsterGenerator_13.3\x64\Debug\RandomMonsterGenerator_13.3.exe

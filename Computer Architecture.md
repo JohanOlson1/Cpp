@@ -1,19 +1,18 @@
-# Introduction
+# 1. Introduction
 
-## What is a computer
+## What is a computer?
 
-## Instruction Set Design
+## Instruction Set Architecture
 
-### How to ensure a ISA is complete?
+## Turing Complete
 
-#### Turing Machine
+## Von Neumann Architecture
 
-#### Universal Turing Machine
+# 2. Language of Bits
 
-#### Modified Universal Turing Machine
+## Boolean Algebra
 
-#### Single Instruction ISA
+## Logic Gates
 
-#### Multiple Instruction ISA
+# 3. Assembly
 
-### Design of Practical Machines
